@@ -5,14 +5,14 @@
     "homepage": "https://github.com/CCV/ccvonlinepayments-php-lib",
     "license": "MIT",
     "type": "library",
-    "version": "1.3.5",
+    "version": "1.3.6",
     "require": {
         "php": ">=7.2.0",
         "ext-json": "*",
         "ext-curl": "*",
         "php-curl-class/php-curl-class": "^8.8|^9.0",
         "brick/phonenumber": "0.1.*",
-        "psr/log": "^1.1"
+        "psr/log": "^1.1|^3.0"
     },
     "autoload": {
         "psr-4": {
