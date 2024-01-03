@@ -4,7 +4,7 @@ namespace CCVOnlinePayments\Lib;
 use CCVOnlinePayments\Lib\Exception\ApiException;
 use CCVOnlinePayments\Lib\Exception\InvalidApiKeyException;
 use Curl\Curl;
-use Psr\Log\LoggerInterface;
+use Illuminate\Support\Facades\Log;
 
 class CcvOnlinePaymentsApi {
 
@@ -19,7 +19,7 @@ class CcvOnlinePaymentsApi {
 
     private $methods = null;
 
-    public function __construct(Cache $cache, LoggerInterface $logger, ?string $apiKey)
+    public function __construct(Cache $cache, Log $logger, ?string $apiKey)
     {
         $this->cache    = $cache;
         $this->logger   = $logger;
